@@ -9,6 +9,22 @@
 - 历史数据永久保留
 
 
+
+### 功能展示
+![](https://tva1.sinaimg.cn/large/0081Kckwly1gl7avcv9l2j31jo0ry41j.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwly1gl7avofz0pj31jm0qidjb.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwly1gl7avzn3q0j31i40q2jtc.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwly1gl7av0qbizj31ig0pa786.jpg)
+
+![](https://tva1.sinaimg.cn/large/0081Kckwly1gl7atao6sij31pl0u0wo4.jpg)
+
+![](https://tva1.sinaimg.cn/large/0081Kckwly1gl7atpqd8jj324o0u0gri.jpg)
+
+![](https://tva1.sinaimg.cn/large/0081Kckwly1gl7au27q4fj31pa0u0dnr.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwly1gl7auaasqbj31j80u00zr.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwly1gl7aup2sboj31sn0u0teg.jpg)
+
+
 ### 联系作者
 微信：5552123
 
