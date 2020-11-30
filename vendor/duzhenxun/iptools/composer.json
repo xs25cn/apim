@@ -1,0 +1,21 @@
+{
+    "name": "duzhenxun/iptools",
+    "description": "IP库工具",
+    "keywords":["iptools,ip-location,ipgeo,ipArea"],
+    "homepage": "http://github.com/duzhenxun/iptools",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zhenxun Du",
+            "email": "5552123@qq.com",
+            "homepage": "http://www.0532888.cn"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-4": {"IpTools\\": "src/"}
+    }
+}
