@@ -11,3 +11,5 @@ npm-debug.log
 yarn-error.log
 /storage
 .DS_Store
+.user.ini
+.well-known/*

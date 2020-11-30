@@ -32,9 +32,8 @@
                                 <i class="ace-icon fa fa-times"></i>
                             </button>
                             <i class="ace-icon fa fa-check green"></i>
-                            Welcome to
                             <strong class="green">
-                                API性能监控系统，今日接口请求最大响应Top排行榜
+                                欢迎使用小手API性能监控系统，本系统基于elasticsearch中的NGIN请求日志,分析请求时间,访问量,错误码等。https://github.com/xs25cn/apim
                             </strong>
                         </div>
                     </div>
