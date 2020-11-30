@@ -47,14 +47,14 @@
                                         <fieldset>
                                             <label class="block clearfix">
                                             <span class="block input-icon input-icon-right">
-                                                <input type="text" class="form-control" name="name" placeholder="用户名"/>
+                                                <input type="text" class="form-control" name="name" value="test" placeholder="用户名"/>
                                                 <i class="ace-icon fa fa-user"></i>
                                             </span>
                                              </label>
 
                                             <label class="block clearfix">
                                             <span class="block input-icon input-icon-right">
-                                                <input type="password" class="form-control" name="password" placeholder="密码"/>
+                                                <input type="password" class="form-control" name="password" value="test"  placeholder="密码"/>
                                                 <i class="ace-icon fa fa-lock"></i>
                                             </span>
                                             </label>
@@ -64,7 +64,7 @@
                                             <div class="clearfix">
                                                 <label class="inline">
                                                     <input type="checkbox" class="ace" name="xxx" value="0"/>
-                                                    <span class="lbl"> Remember Me</span>
+                                                    <span class="lbl"> 演示账号test,密码test</span>
                                                 </label>
 
                                                 <input type="button" name="dosubmit" value="Login" class="width-35 pull-right btn btn-sm btn-primary">
@@ -107,6 +107,7 @@
         </div><!-- /.row -->
     </div><!-- /.main-content -->
 </div><!-- /.main-container -->
+<div style="display: none"><script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1279479706&web_id=1279479706"></script></div>
 <script src="/js/rsa.js"></script>
 <script>
 
