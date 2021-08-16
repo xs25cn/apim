@@ -7,10 +7,13 @@
  */
 return [
     //'host' => 'http://127.0.0.1:9200',
-    'es_host' => 'http://ali-f-bpc-elasticsearch07.bj:9200',
+/*    ali-e-ops-es-nginx01.bj
+ali-f-ops-es-nginx02.bj
+ali-c-ops-es-nginx03.bj*/
+    'es_host' => 'http://ali-e-ops-es-nginx01.bj:9200',
     //索引文件
     'es_index' => [
-        1 => 'act-access-nginx-log*',
+        1 => 'nginx-act-access*',
         2 => 'go_access*',
         3 => 'java_access*',
     ],
@@ -19,7 +22,7 @@ return [
     //es中的字段映射
     'es_search_filed'=>[
         'domain'=>'domain_name',//域名
-        'request'=>'request', //请求地址
+        'request'=>'path', //请求地址
         'status'=>'status',//状态
         'timestamp'=>'@timestamp',//时间
         'request_time'=>'request_time',//响应时长

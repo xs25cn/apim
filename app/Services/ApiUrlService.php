@@ -56,10 +56,10 @@ class ApiUrlService extends Service
         $t1 = microtime(true);
         $esService = EsService::getInstance();
         $post_data = $esService->getDomainApiUrlJson($domain, $prefix, $start_time, $end_time);
+        //echo $post_data;
         $es_url = $esService->getEsDomain() . '/' . $esService->getEsIndex($info->es_index) . '/' . $esService->getEsType() . '/_search';
         $res = my_curl($es_url, $post_data, ["content-type: application/json; charset=UTF-8"], 180, 60);
         $results = json_decode($res, true);
-
         //对返回的信息做判断,是否超时,查取不到信息等
         if (empty($results['aggregations']['res']['buckets'])) {
             return ['code' => '-1', 'msg' => '无数据', 'data' => $results];
@@ -700,7 +700,7 @@ class ApiUrlService extends Service
         $es_url = $esService->getEsDomain() . '/' . $esService->getEsIndex($es_index) . '/' . $esService->getEsType() . '/_search';
         $res = my_curl($es_url, $post_data, ["content-type: application/json; charset=UTF-8"]);
         $res = json_decode($res, true);
-
+       // dd($res);
         $lists = [];
 
         if (!empty($res['hits']['hits'])) {
@@ -714,10 +714,10 @@ class ApiUrlService extends Service
                 $method = strtoupper($v['_source'][$elasticConf['es_search_filed']['request_method']]);
                 $lists[$k]['method'] = $method;
                 if ($method == 'GET') {
-                    $tmp_arr = explode('?', $v['_source']['request']);
-                    $lists[$k]['request'] = $tmp_arr[0]; //访问地址只保留?号左侧
-                    if (!empty($tmp_arr[1])) {
-                        $request_body = $tmp_arr[1];//？号右侧参数放入body体
+                    $query = $v['_source']['query'];
+                    $lists[$k]['request'] = $v['_source']['path']; //访问地址只保留?号左侧
+                    if (!empty($query)) {
+                        $request_body = $query;//？号右侧参数放入body体
                     }
                 }
 

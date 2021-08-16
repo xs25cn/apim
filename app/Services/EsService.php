@@ -15,6 +15,9 @@ use Elasticsearch\ClientBuilder;
 
 class EsService extends Service
 {
+    public function test(){
+        echo bcrypt('duzhenxun');
+    }
 
     /**
      * 格式化API响应时间数据

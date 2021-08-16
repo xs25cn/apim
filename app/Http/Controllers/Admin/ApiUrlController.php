@@ -121,7 +121,6 @@ class ApiUrlController extends Controller
             $prefix = request('prefix');
             $start_time = strtotime(request('start_time'));
             $end_time = strtotime(request('end_time'));
-
             if (!$start_time) {
                 $start_time = time() - 86400;
             }
@@ -136,7 +135,6 @@ class ApiUrlController extends Controller
             }
 
             $queueName = SiteService::getInstance()->getSetting('get_api_url')[0];
-
             if($queueName){
                 //异步
                 AsyncJob::dispatch('ApiUrlService','syncDomainApiUrl',[$api_domain_id,$prefix,$start_time,$end_time])->onQueue($queueName);
